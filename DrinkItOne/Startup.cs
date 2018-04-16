@@ -27,5 +27,6 @@ namespace DrinkItOne
             }
 
             app.UseMvc();
+        }
     }
 }
