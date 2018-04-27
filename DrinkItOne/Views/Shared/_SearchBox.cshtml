@@ -1,0 +1,33 @@
+﻿@model SearchVM
+
+<div class="container-fluid">
+    <div class="col">
+
+        <div class="row">
+            <form asp-controller="Guest" asp-action="index">
+                <input class="form" asp-for="@Model.SearchItem" />
+                <input class="btn btn-outline-primary" type="submit" name="SubmitButton" value="Search" />
+                <br />
+                <br />
+        </div>
+
+        <div class="row">
+            <input asp-for="@Model.ParamUrl" type="radio" name="SearchParameter" value="Drink" checked> Drink
+            <input asp-for="@Model.ParamUrl" type="radio" name="SearchParameter" value="Ingredient">Ingredient<br>
+            <br />
+            </form>
+
+        </div>
+
+        <div class="row">
+            <form asp-controller="Guest" asp-action="RandomDrink">
+                <strong>Looking for a drink?</strong>
+                <br />
+                <input class="btn btn-outline-primary" type="submit" name="RandomButton" value="Serve A Drink" />
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
